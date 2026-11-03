@@ -1,0 +1,106 @@
+A.RICH Software Source License
+(Custom / proprietary source license — not MIT)
+Copyright (c) A.RICH Software — https://arich-software.co.il/
+
+This license covers the source code of this repository (the "Code")
+and the files that users generate with the tool (the "Output").
+The company name "A.RICH Software", the site https://arich-software.co.il/,
+and the logo/favicon image files in the `assets/` folder (the "Brand Marks")
+are not licensed for reuse.
+
+Third-party files keep their own licenses. See NOTICE and
+vendor/LICENSE-MIT.txt. On GitHub, set the repository license to Other
+(custom). Do not mark this repository as MIT.
+
+--------------------------------------------------
+1. Output — free use
+--------------------------------------------------
+QR codes, links, SVG/PNG files, and any other files produced by
+running this tool may be used freely for personal and commercial purposes.
+No credit is required for the Output itself.
+
+--------------------------------------------------
+2. Code — personal and commercial use, with credit
+--------------------------------------------------
+You may use, copy, modify, and distribute the Code for personal use
+and for commercial use.
+
+If you use the Code (including copies, forks, republished versions,
+or substantial parts of it) you MUST give visible credit to
+A.RICH Software, with an active link to the company website:
+
+    A.RICH Software — https://arich-software.co.il/
+
+The credit must appear in the product, website, or repository that
+uses the Code (for example in the footer, README, or about screen).
+
+--------------------------------------------------
+3. Brand Marks — not licensed
+--------------------------------------------------
+You may NOT use the A.RICH Software logos, favicons, or other Brand
+Marks on other websites, in other products, or in copies of this
+repository. If you copy the Code, remove the Brand Marks and replace
+them with your own identity. The company name may appear only in the
+required credit described in section 2.
+
+--------------------------------------------------
+4. Privacy — no collection, no tracking
+--------------------------------------------------
+This tool does not collect, store, sell, or transmit personal data.
+It does not use analytics, advertising pixels, tracking cookies, or
+usage logs. Phone numbers, emails, URLs, uploaded images, and generated
+files are processed only in the user's browser and are not sent to
+A.RICH Software or to any third-party server by this tool.
+
+The page may load the Heebo font from Google Fonts. That request does
+not include form data, uploads, or generated files.
+
+--------------------------------------------------
+5. Third-party notices
+--------------------------------------------------
+vendor/qrcode-generator.js is copyright Kazuhiko Arase (2009) and is
+licensed under the MIT License. The MIT copyright and permission
+notices are in that file and in vendor/LICENSE-MIT.txt. Copies of
+this repository must keep those notices.
+
+"QR Code" is a registered trademark of DENSO WAVE INCORPORATED.
+
+Heebo is served by Google Fonts under the SIL Open Font License 1.1.
+Font files are not bundled in this repository.
+
+--------------------------------------------------
+6. Disclaimer of Warranty & Liability
+--------------------------------------------------
+The Code and Output are provided "AS IS", without warranty of any kind,
+express or implied. In no event shall A.RICH Software be liable for any
+claim, damages, or other liability arising from the use of this tool.
+
+--------------------------------------------------
+עברית
+--------------------------------------------------
+רישיון קוד המקור של A.RICH Software
+(רישיון מקור מותאם / קנייני — לא MIT)
+כל הזכויות שמורות ל-A.RICH Software — https://arich-software.co.il/
+
+התוצר (קישורים וקודי QR שהופקו בכלי) מותר לשימוש חופשי, כולל שימוש
+מסחרי ושימוש עצמי, בלי חובת קרדיט על התוצר עצמו.
+
+הקוד במאגר מותר לשימוש עצמי ולשימוש מסחרי. אם משתמשים בקוד, מעתיקים
+אותו, מפרסמים אותו או משלבים חלק מהותי ממנו — חובה לתת קרדיט גלוי
+לחברת A.RICH Software עם קישור פעיל לאתר: https://arich-software.co.il/
+
+אסור להשתמש בלוגו, באייקון או בתמונות המותג של החברה באתרים אחרים
+או בעותקים של המאגר. מי שמעתיק את הקוד חייב להסיר את קבצי המותג.
+
+הכלי אינו אוסף, אינו שומר ואינו מעביר מידע על משתמשים בשום צורה.
+אין מעקב אחרי השימוש, אין אנליטיקס ואין עוגיות מעקב. כל העיבוד של
+הנתונים שהמשתמש מזין נעשה בדפדפן בלבד. טעינת גופן Heebo מ-Google Fonts
+אינה כוללת את הנתונים שהוזנו בטופס.
+
+vendor/qrcode-generator.js הוא יצירתו של Kazuhiko Arase ומוגן ברישיון
+MIT. יש לשמור את vendor/LICENSE-MIT.txt ואת כותרת הזכויות שבקובץ.
+"QR Code" הוא סימן מסחרי רשום של DENSO WAVE INCORPORATED.
+
+הקוד והתוצרים ניתנים כמות שהם ("AS IS"), ללא אחריות מכל סוג שהוא.
+A.RICH Software לא תישא באחריות לכל נזק, ישיר או עקיף, שייגרם
+כתוצאה מהשימוש בכלי או בתוצרים המופקים ממנו.

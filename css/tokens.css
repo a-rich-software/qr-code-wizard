@@ -1,0 +1,92 @@
+/* Brand tokens for chrome only. QR module colors live in js/presets.js. */
+:root {
+  --ink: #111827;
+  --ink-soft: #334155;
+  --muted: #64748b;
+  --aqua: #38c6ba;
+  --aqua-deep: #2aa89e;
+  --teal: #005f60;
+  --copper: #c2410c;
+  --copper-hover: #9a3412;
+  --ice: #f4fbfb;
+  --mist: #e8f4f3;
+  --paper: #ffffff;
+  --line: #d7e5e3;
+  --hero: #0c1926;
+  --hero-deep: #08131d;
+  --wa: #128c7e;
+  --danger: #b42318;
+  --ok: #0f7a4a;
+  --radius-pill: 999px;
+  --radius-card: 1.35rem;
+  --radius-control: 0.9rem;
+  --shadow: 0 22px 50px -28px rgba(12, 25, 38, 0.45);
+  --shadow-soft: 0 10px 30px -18px rgba(12, 25, 38, 0.28);
+  --font: "Heebo", ui-sans-serif, system-ui, sans-serif;
+  --space: 1.05rem;
+  --max: 72rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+  max-width: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  max-width: 100%;
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+a {
+  color: inherit;
+}
+
+.skip {
+  position: absolute;
+  inset-inline-start: 1rem;
+  top: -3rem;
+  z-index: 80;
+  padding: 0.7rem 1rem;
+  border-radius: var(--radius-pill);
+  background: var(--ink);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.skip:focus {
+  top: 0.7rem;
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>License | A.RICH Software</title>
+    <meta
+      name="description"
+      content="A.RICH Software Source License for the Link & QR Generator: free generated files, source-code credit, brand marks, and privacy."
+    />
+    <meta name="theme-color" content="#0c1926" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="A.RICH Software" />
+    <link rel="canonical" href="./license.html" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/arich-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <script>
+      /* Set lang/dir before paint to avoid a flash of the wrong direction. */
+      (function () {
+        var lang = "en";
+        try {
+          var saved = localStorage.getItem("arich-qr-lang");
+          if (saved === "he" || saved === "en") {
+            lang = saved;
+          } else {
+            var list = [];
+            if (navigator.languages && navigator.languages.length) {
+              list = list.concat(navigator.languages);
+            }
+            if (navigator.language) {
+              list.push(navigator.language);
+            }
+            var i;
+            var tag;
+            for (i = 0; i < list.length; i += 1) {
+              tag = String(list[i] || "").toLowerCase();
+              if (tag === "he" || tag.indexOf("he-") === 0 || tag === "iw" || tag.indexOf("iw-") === 0) {
+                lang = "he";
+                break;
+              }
+            }
+          }
+        } catch (err) {
+          lang = "en";
+        }
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "he" ? "rtl" : "ltr";
+        document.documentElement.setAttribute("data-lang", lang);
+      })();
+    </script>
+  </head>
+  <body data-title-key="licensePageTitle" data-desc-key="licenseDescription">
+    <a class="skip" href="#content" data-i18n="skip">Skip to content</a>
+
+    <div class="promo">
+      <span data-i18n="promo">A free tool from</span>
+      <a href="https://arich-software.co.il/" target="_blank" rel="noopener">A.RICH Software</a>
+      · <span data-i18n="promoRest">No sign-up, no ads</span>
+    </div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="https://arich-software.co.il/" target="_blank" rel="noopener">
+          <img src="assets/arich-logo.png" alt="A.RICH Software Solutions" width="168" height="42" />
+        </a>
+        <div class="header-actions">
+          <div class="lang-switch" role="group" data-i18n-aria="langAria" aria-label="Interface language">
+            <button type="button" class="lang-btn is-on" data-lang-set="en" aria-pressed="true">EN</button>
+            <button type="button" class="lang-btn" data-lang-set="he" aria-pressed="false">עב</button>
+          </div>
+          <a class="header-link" href="./" data-i18n="termsBack">Back to the generator</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="content" class="terms-page">
+      <article class="terms-card" data-lang-block="en" lang="en">
+        <h1>A.RICH Software Source License</h1>
+        <p>
+          Custom / proprietary source license — not MIT.<br />
+          Copyright (c) A.RICH Software —
+          <a href="https://arich-software.co.il/" target="_blank" rel="noopener">https://arich-software.co.il/</a>
+        </p>
+        <p>
+          This license covers the source code of this repository (the “Code”) and the files that users
+          generate with the tool (the “Output”). The company name “A.RICH Software”, the site
+          <a href="https://arich-software.co.il/" target="_blank" rel="noopener">https://arich-software.co.il/</a>,
+          and the logo/favicon image files in the <code>assets/</code> folder (the “Brand Marks”) are not
+          licensed for reuse.
+        </p>
+        <p>
+          Third-party files keep their own licenses. See <a href="NOTICE">NOTICE</a> and
+          <a href="vendor/LICENSE-MIT.txt">vendor/LICENSE-MIT.txt</a>. On GitHub, set the repository
+          license to Other (custom). Do not mark this repository as MIT.
+        </p>
+
+        <h2>1. Output — free use</h2>
+        <p>
+          QR codes, links, SVG/PNG files, and any other files produced by running this tool may be used
+          freely for personal and commercial purposes. No credit is required for the Output itself.
+        </p>
+
+        <h2>2. Code — personal and commercial use, with credit</h2>
+        <p>
+          You may use, copy, modify, and distribute the Code for personal use and for commercial use.
+        </p>
+        <p>
+          If you use the Code (including copies, forks, republished versions, or substantial parts of it)
+          you MUST give visible credit to A.RICH Software, with an active link to the company website:
+          <a href="https://arich-software.co.il/" target="_blank" rel="noopener">A.RICH Software — https://arich-software.co.il/</a>.
+          The credit must appear in the product, website, or repository that uses the Code (for example
+          in the footer, README, or about screen).
+        </p>
+
+        <h2>3. Brand Marks — not licensed</h2>
+        <p>
+          You may NOT use the A.RICH Software logos, favicons, or other Brand Marks on other websites,
+          in other products, or in copies of this repository. If you copy the Code, remove the Brand Marks
+          and replace them with your own identity. The company name may appear only in the required credit
+          described in section 2.
+        </p>
+
+        <h2>4. Privacy — no collection, no tracking</h2>
+        <p>
+          This tool does not collect, store, sell, or transmit personal data. It does not use analytics,
+          advertising pixels, tracking cookies, or usage logs. Phone numbers, emails, URLs, uploaded images,
+          and generated files are processed only in the user’s browser and are not sent to A.RICH Software
+          or to any third-party server by this tool.
+        </p>
+        <p>
+          The page may load the Heebo font from Google Fonts. That request does not include form data,
+          uploads, or generated files.
+        </p>
+
+        <h2>5. Third-party notices</h2>
+        <p>
+          <code>vendor/qrcode-generator.js</code> is copyright Kazuhiko Arase (2009) and is licensed under
+          the MIT License. The MIT copyright and permission notices are in that file and in
+          <a href="vendor/LICENSE-MIT.txt">vendor/LICENSE-MIT.txt</a>. Copies of this repository must keep
+          those notices.
+        </p>
+        <p>
+          Five center marks in <code>vendor/brand-marks.js</code> are Simple Icons paths under CC0 1.0.
+          WhatsApp, Instagram, Facebook, LinkedIn, and Waze remain trademarks of their owners. CC0 does
+          not license those trademarks.
+        </p>
+        <p>
+          “QR Code” is a registered trademark of DENSO WAVE INCORPORATED. Heebo is served by Google Fonts
+          under the SIL Open Font License 1.1. Font files are not bundled in this repository.
+        </p>
+
+        <h2>6. Disclaimer of Warranty &amp; Liability</h2>
+        <p>
+          The Code and Output are provided “AS IS”, without warranty of any kind, express or implied.
+          In no event shall A.RICH Software be liable for any claim, damages, or other liability arising
+          from the use of this tool.
+        </p>
+      </article>
+
+      <article class="terms-card" data-lang-block="he" lang="he" hidden>
+        <h1>רישיון קוד המקור של A.RICH Software</h1>
+        <p>
+          רישיון מקור מותאם / קנייני — לא MIT.<br />
+          כל הזכויות שמורות ל-A.RICH Software —
+          <a href="https://arich-software.co.il/" target="_blank" rel="noopener">https://arich-software.co.il/</a>
+        </p>
+
+        <h2>1. התוצר — שימוש חופשי</h2>
+        <p>
+          התוצר (קישורים וקודי QR שהופקו בכלי) מותר לשימוש חופשי, כולל שימוש מסחרי ושימוש עצמי, בלי
+          חובת קרדיט על התוצר עצמו.
+        </p>
+
+        <h2>2. הקוד — שימוש עצמי ומסחרי, עם קרדיט</h2>
+        <p>
+          הקוד במאגר מותר לשימוש עצמי ולשימוש מסחרי. אם משתמשים בקוד, מעתיקים אותו, מפרסמים אותו או
+          משלבים חלק מהותי ממנו — חובה לתת קרדיט גלוי לחברת A.RICH Software עם קישור פעיל לאתר
+          <a href="https://arich-software.co.il/" target="_blank" rel="noopener">https://arich-software.co.il/</a>.
+        </p>
+
+        <h2>3. סימני המותג — אינם מורשים</h2>
+        <p>
+          אסור להשתמש בלוגו, באייקון או בתמונות המותג של החברה באתרים אחרים או בעותקים של המאגר.
+          מי שמעתיק את הקוד חייב להסיר את קבצי המותג.
+        </p>
+
+        <h2>4. פרטיות — בלי איסוף ובלי מעקב</h2>
+        <p>
+          הכלי אינו אוסף, אינו שומר ואינו מעביר מידע על משתמשים בשום צורה. אין מעקב אחרי השימוש, אין
+          אנליטיקס ואין עוגיות מעקב. כל העיבוד של הנתונים שהמשתמש מזין נעשה בדפדפן בלבד. טעינת גופן
+          Heebo מ-Google Fonts אינה כוללת את הנתונים שהוזנו בטופס.
+        </p>
+
+        <h2>5. הודעות צד שלישי</h2>
+        <p>
+          <code>vendor/qrcode-generator.js</code> הוא יצירתו של Kazuhiko Arase ומוגן ברישיון MIT. יש לשמור
+          את <a href="vendor/LICENSE-MIT.txt">vendor/LICENSE-MIT.txt</a> ואת כותרת הזכויות שבקובץ.
+          "QR Code" הוא סימן מסחרי רשום של DENSO WAVE INCORPORATED.
+          חמישה סימני מרכז ב-<code>vendor/brand-marks.js</code> הם נתיבים מ-Simple Icons תחת CC0 1.0.
+          WhatsApp, Instagram, Facebook, LinkedIn ו-Waze נשארים סימנים מסחריים של בעליהם. CC0 אינו מעניק רישיון לסימנים.
+        </p>
+
+        <h2>6. כתב ויתור מאחריות</h2>
+        <p>
+          הקוד והתוצרים ניתנים כמות שהם ("AS IS"), ללא אחריות מכל סוג שהוא. A.RICH Software לא תישא
+          באחריות לכל נזק, ישיר או עקיף, שייגרם כתוצאה מהשימוש בכלי או בתוצרים המופקים ממנו.
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span data-i18n="footer">A free tool from A.RICH Software</span>
+        <span class="footer-links">
+          <a href="about.html" data-i18n="whyFree">Why is this free?</a>
+          <a href="terms.html" data-i18n="terms">Terms of use</a>
+          <a href="license.html" data-i18n="license">License</a>
+          <a href="https://arich-software.co.il/" target="_blank" rel="noopener">arich-software.co.il</a>
+        </span>
+        <p class="footer-privacy" data-i18n="privacyNote">This tool does not collect, store, or track personal data.</p>
+      </div>
+    </footer>
+
+    <script src="js/i18n.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        setDocumentLang(detectInterfaceLang(), false);
+        document.querySelectorAll("[data-lang-set]").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            setDocumentLang(btn.getAttribute("data-lang-set"), true);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

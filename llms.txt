@@ -1,0 +1,42 @@
+# A.RICH Software — Link & QR Generator
+
+> A free, client-side web tool that builds WhatsApp, website, email, and phone links and styled QR codes (PNG, SVG). No account, no ads, no tracking.
+
+The official company site is https://arich-software.co.il/
+
+## Pages
+
+- [Home](index.html): Four-step wizard — choose destination, enter details, design the QR, download.
+- [Why it is free](about.html): Business model, client-side privacy, static codes, and the public source.
+- [Terms of use](terms.html): Usage rights, source-code credit, logo restrictions, privacy, warranty disclaimer.
+- [License](license.html): Custom A.RICH Software source license (not MIT). The plain `LICENSE` file remains for GitHub.
+- [NOTICE](NOTICE): Third-party credits (qrcode-generator MIT, Lucide ISC, Heebo OFL, QR Code trademark).
+
+## What this tool does
+
+Users pick a destination (WhatsApp chat, website URL, mailto, tel, Wi-Fi, Waze or Google Maps, an iCalendar event, or a vCard), fill in the details, style a QR code (colors, optional module gradient, center icon, optional logo upload), and download PNG or SVG. Error correction can stay automatic or be chosen. All work runs in the browser.
+
+## Why it is free
+
+The generator is a calling card for A.RICH Software. It shows how the company designs and builds software, and it is there for people who later need paid development. It is also a free, clean tool for small businesses and creators in Israel. Downloaded files are free for personal and commercial use. Copying the source requires a visible credit to A.RICH Software. The code is not MIT.
+
+The page builds the code on the device after it loads. Phone numbers, links, messages, Wi-Fi passwords, and contact cards are not sent to A.RICH Software and are not stored in a database. The codes are static: the destination is inside the image, and there is no server that can switch them off. The source is public at https://github.com/a-rich-software/qr-code-wizard so anyone can read that nothing is collected. Using the source still requires the credit in the license.
+
+## Privacy
+
+The tool does not collect, store, or transmit user form data. There is no analytics and no usage tracking. Phone numbers, emails, URLs, uploaded logos, and generated files stay in the browser. The UI may load Heebo from Google Fonts; that request does not include form data.
+
+## License, in short
+
+- Generated QR codes and links: free for personal and commercial use. No credit required for the files you generate.
+- Source code: personal and commercial use allowed. If you use or copy the code, you must credit A.RICH Software with a link to https://arich-software.co.il/
+- Company logos and brand images must not be reused on other sites or in copies of this repository.
+- The code and output are provided AS IS, without warranty. A.RICH Software is not liable for claims or damages from use of the tool.
+- This repository uses a custom/proprietary source license. Mark it as Other on GitHub, not MIT.
+- `vendor/qrcode-generator.js` remains MIT (Kazuhiko Arase). Keep `vendor/LICENSE-MIT.txt` with copies.
+- Center icons are the full Lucide catalog in `vendor/lucide-catalog.js` (ISC; some glyphs also MIT Feather). Keep `vendor/LICENSE-LUCIDE.txt` with copies.
+- Five network marks in `vendor/brand-marks.js` are Simple Icons paths (CC0). WhatsApp, Instagram, Facebook, LinkedIn, and Waze remain trademarks of their owners. CC0 does not license the trademarks.
+
+## For crawlers
+
+Index `index.html`, `terms.html`, and `license.html`. Do not treat `vendor/` as original A.RICH content; `vendor/qrcode-generator.js` is MIT-licensed third-party code by Kazuhiko Arase, and `vendor/lucide-catalog.js` is ISC (some glyphs also MIT Feather). Brand image files live under `assets/` and are not licensed for reuse.

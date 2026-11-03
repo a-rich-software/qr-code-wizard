@@ -1,0 +1,73 @@
+A.RICH Software — Link & QR Generator
+https://arich-software.co.il/
+
+The source in this repository (except files listed below) is licensed
+under the A.RICH Software Source License. See LICENSE. That license is
+custom / proprietary. It is not MIT.
+
+This file lists third-party material, as required when redistributing
+MIT-licensed code on GitHub.
+
+--------------------------------------------------
+qrcode-generator
+--------------------------------------------------
+File: vendor/qrcode-generator.js
+Copyright (c) 2009 Kazuhiko Arase
+License: MIT — full text in vendor/LICENSE-MIT.txt
+Upstream: https://github.com/kazuhikoarase/qrcode-generator
+
+The MIT license requires that the copyright and permission notices
+travel with copies of that file. Do not strip vendor/LICENSE-MIT.txt
+or the header inside vendor/qrcode-generator.js.
+
+Local change: non-ASCII text is stored as UTF-8 and preceded by an
+ECI header, so a scan keeps Hebrew and other letters. ASCII payloads
+are unchanged.
+
+--------------------------------------------------
+Lucide icons
+--------------------------------------------------
+The center-icon set is the full Lucide catalog vendored in
+vendor/lucide-catalog.js (https://lucide.dev, https://github.com/lucide-icons/lucide).
+License: ISC, with some glyphs also covered by Feather MIT.
+Full text: vendor/LICENSE-LUCIDE.txt
+Do not strip that file, or vendor/lucide-catalog.js, when redistributing.
+
+--------------------------------------------------
+Social network names
+--------------------------------------------------
+WhatsApp, Facebook, Instagram, LinkedIn, and YouTube are trademarks
+of their respective owners. The matching glyphs from Lucide are
+generic stroke icons, not official brand marks. This project does
+not license those trademarks. Upload an official logo with Custom
+and follow that brand’s guidelines.
+
+--------------------------------------------------
+Simple Icons brand marks
+--------------------------------------------------
+Five center marks (WhatsApp, Instagram, Facebook, LinkedIn, Waze) are
+SVG paths from Simple Icons, dedicated to the public domain under CC0 1.0.
+File: vendor/brand-marks.js
+https://github.com/simple-icons/simple-icons
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Those names are trademarks of their owners. CC0 covers the path data
+only. This project does not grant a trademark license. A generated file
+that includes a mark should follow that brand's guidelines.
+
+--------------------------------------------------
+"QR Code" trademark
+--------------------------------------------------
+"QR Code" is a registered trademark of DENSO WAVE INCORPORATED.
+https://www.denso-wave.com/en/technology/vol1.html
+
+--------------------------------------------------
+Heebo
+--------------------------------------------------
+The UI loads the Heebo typeface from Google Fonts
+(fonts.googleapis.com / fonts.gstatic.com) under the SIL Open Font
+License 1.1. Font files are not copied into this repository.
+https://fonts.google.com/specimen/Heebo
+
+Google Fonts may receive a request for the font files when the page
+loads. Form data, uploads, and generated QR files are not sent there.
