@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-lang="en" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Why is this free? | A.RICH Software</title>
+    <meta
+      name="description"
+      content="Why the A.RICH Software QR generator is free, how it builds the code on your device, and why the codes are not switched off remotely."
+    />
+    <meta name="theme-color" content="#0c1926" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="A.RICH Software" />
+    <link rel="canonical" href="https://arich-software.co.il/qr-code-wizard/about.html" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/arich-logo.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="A.RICH Software" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="he_IL" />
+    <meta property="og:title" content="Why is this free? | A.RICH Software" />
+    <meta
+      property="og:description"
+      content="Why the A.RICH Software QR generator is free, how it builds the code on your device, and why the codes are not switched off remotely."
+    />
+    <meta property="og:url" content="https://arich-software.co.il/qr-code-wizard/about.html" />
+    <meta property="og:image" content="https://arich-software.co.il/qr-code-wizard/assets/og-image.jpg" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="og:image:alt" content="A.RICH Software QR generator. Free, built on your device, no sign-up." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Why is this free? | A.RICH Software" />
+    <meta
+      name="twitter:description"
+      content="Why the A.RICH Software QR generator is free, how it builds the code on your device, and why the codes are not switched off remotely."
+    />
+    <meta name="twitter:image" content="https://arich-software.co.il/qr-code-wizard/assets/og-image.jpg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "url": "https://arich-software.co.il/qr-code-wizard/about.html",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is it really free? No small print?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The QR files and links you download are free for personal and commercial use. There is no account, no ads, and no credit required on the file itself. The conditions cover copying the source code, which needs a visible credit to A.RICH Software, and the company logos, which are not licensed for reuse."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What do you do with my information?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "After the page loads, your phone or computer creates the code. Phone numbers, links, messages, Wi-Fi passwords, and contact cards are not sent to A.RICH Software and are not stored in a database. A draft of the form (phone, email, Wi-Fi password, and logo) stays only in sessionStorage and is deleted when the browser tab closes. localStorage keeps only the language and design preferences (colors and shapes, not form contents). The tool uses no cookies. The Heebo font is included with this site, and loading it does not include what you type."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will the codes expire or be blocked?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The code is static. The destination is written inside the image. There is no server that can switch it off. It keeps working as long as the destination itself still works: the number, the website, the password, or the event."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "So what do you get out of it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The tool is a calling card for A.RICH Software. It shows how the company designs and builds software, and it is there for people who later need paid development. It is also how the company supports small businesses and creators in Israel with free, clean tools."
+            }
+          }
+        ]
+      }
+    </script>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <script>
+      /* Set lang/dir before paint to avoid a flash of the wrong direction. */
+      (function () {
+        var lang = "en";
+        try {
+          var saved = localStorage.getItem("arich_qr_wizard_lang");
+          if (saved !== "he" && saved !== "en") {
+            var legacyLang = localStorage.getItem("arich-qr-lang");
+            if (legacyLang === "he" || legacyLang === "en") {
+              saved = legacyLang;
+              localStorage.setItem("arich_qr_wizard_lang", legacyLang);
+              localStorage.removeItem("arich-qr-lang");
+            }
+          }
+          if (saved === "he" || saved === "en") {
+            lang = saved;
+          } else {
+            var list = [];
+            if (navigator.languages && navigator.languages.length) {
+              list = list.concat(navigator.languages);
+            }
+            if (navigator.language) {
+              list.push(navigator.language);
+            }
+            var i;
+            var tag;
+            for (i = 0; i < list.length; i += 1) {
+              tag = String(list[i] || "").toLowerCase();
+              if (tag === "he" || tag.indexOf("he-") === 0 || tag === "iw" || tag.indexOf("iw-") === 0) {
+                lang = "he";
+                break;
+              }
+            }
+          }
+        } catch (err) {
+          lang = "en";
+        }
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "he" ? "rtl" : "ltr";
+        document.documentElement.setAttribute("data-lang", lang);
+      })();
+    </script>
+  </head>
+  <body data-title-key="aboutPageTitle" data-desc-key="aboutDescription">
+    <a class="skip" href="#content" data-i18n="skip">Skip to content</a>
+
+    <div class="promo">
+      <span data-i18n="promo">A free tool from</span>
+      <a href="https://arich-software.co.il/" target="_blank" rel="noopener">A.RICH Software</a>
+      · <span data-i18n="promoRest">No sign-up, no ads</span>
+    </div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="https://arich-software.co.il/" target="_blank" rel="noopener">
+          <img src="assets/arich-logo.png" alt="A.RICH Software Solutions" width="168" height="42" />
+        </a>
+        <div class="header-actions">
+          <div class="lang-switch" role="group" data-i18n-aria="langAria" aria-label="Interface language">
+            <button type="button" class="lang-btn is-on" data-lang-set="en" aria-pressed="true">EN</button>
+            <button type="button" class="lang-btn" data-lang-set="he" aria-pressed="false">עב</button>
+          </div>
+          <a class="header-link" href="./" data-i18n="termsBack">Back to the generator</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="content" class="terms-page">
+      <article class="terms-card" data-lang-block="en" lang="en">
+        <h1>Why is this free?</h1>
+        <p>
+          A short account of the A.RICH Software QR generator: what it costs, what happens to what you type,
+          and why the company publishes it.
+        </p>
+        <div class="faq-list">
+          <details open>
+            <summary>Is it really free? No small print?</summary>
+            <p>
+              The QR files and links you download are free for personal and commercial use. There is no account,
+              no ads, and no credit required on the file itself. The conditions cover copying the source code,
+              which needs a visible credit to A.RICH Software, and the company logos, which are not licensed for
+              reuse.
+            </p>
+          </details>
+          <details>
+            <summary>What do you do with my information?</summary>
+            <p>
+              After the page loads, your phone or computer creates the code. Phone numbers, links, messages,
+              Wi-Fi passwords, and contact cards are not sent to A.RICH Software and are not stored in a database.
+              A draft of the form (phone, email, Wi-Fi password, and logo) stays only in sessionStorage and is deleted when the browser tab closes. localStorage keeps only the language and design preferences (colors and shapes, not form contents). The tool uses no cookies. The Heebo font is included with this site, and loading it does not include what you type.
+            </p>
+          </details>
+          <details>
+            <summary>Will the codes expire or be blocked?</summary>
+            <p>
+              The code is static. The destination is written inside the image. There is no server that can switch
+              it off. It keeps working as long as the destination itself still works: the number, the website, the
+              password, or the event.
+            </p>
+          </details>
+          <details>
+            <summary>So what do you get out of it?</summary>
+            <p>
+              The tool is a calling card for A.RICH Software. It shows how the company designs and builds software,
+              and it is there for people who later need paid development. It is also how the company supports small
+              businesses and creators in Israel with free, clean tools.
+            </p>
+          </details>
+        </div>
+        <h2>Can I check that?</h2>
+        <p>
+          The source is public on
+          <a href="https://github.com/a-rich-software/qr-code-wizard" target="_blank" rel="noopener">GitHub</a>.
+          Any developer can read it and see that nothing is collected. Using or copying the code requires the
+          credit described on the <a href="license.html">license</a> page. The company site is
+          <a href="https://arich-software.co.il/" target="_blank" rel="noopener">arich-software.co.il</a>.
+        </p>
+      </article>
+
+      <article class="terms-card" data-lang-block="he" lang="he" hidden>
+        <h1>למה זה חינמי?</h1>
+        <p>
+          הסבר קצר על מחולל ה-QR של A.RICH Software: מה עולה, מה קורה למה שמקלידים, ולמה החברה מפרסמת אותו.
+        </p>
+        <div class="faq-list">
+          <details open>
+            <summary>באמת חינמי? בלי אותיות קטנות?</summary>
+            <p>
+              הקבצים והקישורים שמורידים חופשיים לשימוש עצמי ומסחרי. אין חשבון, אין פרסומות, ואין חובת קרדיט על
+              הקובץ עצמו. התנאים חלים על העתקת קוד המקור, שמחייבת קרדיט גלוי ל-A.RICH Software, ועל סמלי החברה,
+              שאינם מורשים לשימוש חוזר.
+            </p>
+          </details>
+          <details>
+            <summary>מה אתם עושים עם המידע שלי?</summary>
+            <p>
+              אחרי שהדף נטען, הטלפון או המחשב שלכם מייצרים את הקוד. מספרי טלפון, קישורים, הודעות, סיסמאות Wi-Fi
+              וכרטיסי ביקור לא נשלחים ל-A.RICH Software ולא נשמרים בבסיס נתונים. טיוטת הטופס
+              (טלפון, אימייל, סיסמת Wi-Fi ולוגו) נשמרת זמנית ב-sessionStorage בלבד ונמחקת אוטומטית עם סגירת הלשונית.
+              ב-localStorage נשמרות רק שפת הממשק והעדפות העיצוב (צבעים וצורות, בלי תוכן הטופס). אין שימוש בעוגיות.
+              גופן Heebo כלול באתר עצמו, וטעינתו לא כוללת את מה שהקלדתם.
+            </p>
+          </details>
+          <details>
+            <summary>האם הקודים יפוגו או ייחסמו?</summary>
+            <p>
+              הקוד סטטי. היעד כתוב בתוך התמונה. אין שרת שיכול לכבות אותו. הוא ממשיך לעבוד כל עוד היעד עצמו קיים:
+              המספר, האתר, הסיסמה או האירוע.
+            </p>
+          </details>
+          <details>
+            <summary>אז מה יוצא לכם מזה?</summary>
+            <p>
+              הכלי הוא כרטיס הביקור של A.RICH Software. הוא מראה איך החברה מעצבת ובונה תוכנה, והוא שם בשביל מי
+              שבהמשך צריך פיתוח בתשלום. זו גם הדרך של החברה לתמוך בעסקים קטנים וביוצרים בישראל בכלים חינמיים ונקיים.
+            </p>
+          </details>
+        </div>
+        <h2>אפשר לבדוק את זה?</h2>
+        <p>
+          המקור גלוי ב-
+          <a href="https://github.com/a-rich-software/qr-code-wizard" target="_blank" rel="noopener">GitHub</a>.
+          כל מתכנת יכול לקרוא אותו ולראות שאין איסוף. שימוש בקוד או העתקה שלו מחייבים את הקרדיט שמפורט
+          <a href="license.html">בדף הרישיון</a>. אתר החברה:
+          <a href="https://arich-software.co.il/" target="_blank" rel="noopener">arich-software.co.il</a>.
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span data-i18n="footer">A free tool from A.RICH Software</span>
+        <span class="footer-links">
+          <a href="about.html" data-i18n="whyFree">Why is this free?</a>
+          <a href="terms.html" data-i18n="terms">Terms of use</a>
+          <a href="license.html" data-i18n="license">License</a>
+          <a href="https://arich-software.co.il/" target="_blank" rel="noopener">arich-software.co.il</a>
+        </span>
+        <p class="footer-privacy" data-i18n="privacyNote">This tool does not collect, store, or track personal data.</p>
+      </div>
+    </footer>
+
+    <script src="js/i18n.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        setDocumentLang(detectInterfaceLang(), false);
+        document.querySelectorAll("[data-lang-set]").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            setDocumentLang(btn.getAttribute("data-lang-set"), true);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Terms of use | A.RICH Software</title>
+    <meta
+      name="description"
+      content="Terms of use for the A.RICH Software QR file generator: free QR downloads, source-code credit, brand marks, and privacy."
+    />
+    <meta name="theme-color" content="#0c1926" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="A.RICH Software" />
+    <link rel="canonical" href="https://arich-software.co.il/qr-code-wizard/terms.html" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/arich-logo.png" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <script>
+      /* Set lang/dir before paint to avoid a flash of the wrong direction. */
+      (function () {
+        var lang = "en";
+        try {
+          var saved = localStorage.getItem("arich_qr_wizard_lang");
+          if (saved !== "he" && saved !== "en") {
+            var legacyLang = localStorage.getItem("arich-qr-lang");
+            if (legacyLang === "he" || legacyLang === "en") {
+              saved = legacyLang;
+              localStorage.setItem("arich_qr_wizard_lang", legacyLang);
+              localStorage.removeItem("arich-qr-lang");
+            }
+          }
+          if (saved === "he" || saved === "en") {
+            lang = saved;
+          } else {
+            var list = [];
+            if (navigator.languages && navigator.languages.length) {
+              list = list.concat(navigator.languages);
+            }
+            if (navigator.language) {
+              list.push(navigator.language);
+            }
+            var i;
+            var tag;
+            for (i = 0; i < list.length; i += 1) {
+              tag = String(list[i] || "").toLowerCase();
+              if (tag === "he" || tag.indexOf("he-") === 0 || tag === "iw" || tag.indexOf("iw-") === 0) {
+                lang = "he";
+                break;
+              }
+            }
+          }
+        } catch (err) {
+          lang = "en";
+        }
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "he" ? "rtl" : "ltr";
+        document.documentElement.setAttribute("data-lang", lang);
+      })();
+    </script>
+  </head>
+  <body data-title-key="termsPageTitle" data-desc-key="termsDescription">
+    <a class="skip" href="#content" data-i18n="skip">Skip to content</a>
+
+    <div class="promo">
+      <span data-i18n="promo">A free tool from</span>
+      <a href="https://arich-software.co.il/" target="_blank" rel="noopener">A.RICH Software</a>
+      · <span data-i18n="promoRest">No sign-up, no ads</span>
+    </div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="https://arich-software.co.il/" target="_blank" rel="noopener">
+          <img src="assets/arich-logo.png" alt="A.RICH Software Solutions" width="168" height="42" />
+        </a>
+        <div class="header-actions">
+          <div class="lang-switch" role="group" data-i18n-aria="langAria" aria-label="Interface language">
+            <button type="button" class="lang-btn is-on" data-lang-set="en" aria-pressed="true">EN</button>
+            <button type="button" class="lang-btn" data-lang-set="he" aria-pressed="false">עב</button>
+          </div>
+          <a class="header-link" href="./" data-i18n="termsBack">Back to the generator</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="content" class="terms-page">
+      <article class="terms-card" data-lang-block="en" lang="en">
+        <h1>Terms of use</h1>
+        <p>
+          These terms cover the A.RICH Software Link &amp; QR Generator. The same rules appear in the
+          <a href="license.html">license</a> page. The company site is
+          <a href="https://arich-software.co.il/" target="_blank" rel="noopener">https://arich-software.co.il/</a>.
+        </p>
+
+        <h2>1. Generated files — free use</h2>
+        <p>
+          QR codes, links, SVG, PNG, and any other files you produce with this tool may be used
+          freely for personal and commercial purposes. No credit is required for the files you generate.
+        </p>
+
+        <h2>2. Source code — personal and commercial use, with credit</h2>
+        <p>
+          You may use, copy, modify, and distribute the source code for personal use and for commercial use.
+          If you use the code — including copies, forks, republished versions, or substantial parts of it —
+          you must give visible credit to A.RICH Software, with an active link to
+          <a href="https://arich-software.co.il/" target="_blank" rel="noopener">https://arich-software.co.il/</a>.
+          The credit must appear in the product, website, or repository that uses the code.
+        </p>
+
+        <h2>3. Brand marks — not licensed</h2>
+        <p>
+          You may not use the A.RICH Software logos, favicons, or other brand images on other websites,
+          in other products, or in copies of this repository. If you copy the code, remove the brand files
+          and replace them with your own identity. The company name may appear only in the required credit
+          described above.
+        </p>
+        <p>
+          Built-in social icons from the library are Lucide stroke glyphs, not official brand logos.
+          Five optional center marks (WhatsApp, Instagram, Facebook, LinkedIn, Waze) are Simple Icons
+          paths under CC0. The names remain trademarks of their owners. This tool does not license those
+          marks. If you need an official color logo, upload it with Custom and follow that brand’s guidelines.
+        </p>
+
+        <h2>4. Privacy — no collection, no tracking</h2>
+        <p>
+          This tool does not collect, sell, or transmit personal data. It does not use analytics,
+          advertising pixels, cookies, or usage logs. Phone numbers, emails, URLs, uploaded images,
+          and generated files are processed only in your browser and are not sent to A.RICH Software.
+          Phone numbers, email addresses, Wi-Fi passwords, and uploaded logos stay only in sessionStorage
+          and are deleted when the browser tab closes. localStorage keeps only the language and design
+          preferences (colors and shapes, not form contents).
+          The Heebo font is included with this site. Loading it does not send form data.
+        </p>
+
+        <h2>5. Third-party notices</h2>
+        <p>
+          <code>vendor/qrcode-generator.js</code> is copyright Kazuhiko Arase (2009) and is licensed under the
+          MIT License. The MIT text is kept in <a href="vendor/LICENSE-MIT.txt">vendor/LICENSE-MIT.txt</a>.
+          The center icons are the full Lucide catalog (ISC; some glyphs also MIT Feather). The license
+          text is in <a href="vendor/LICENSE-LUCIDE.txt">vendor/LICENSE-LUCIDE.txt</a>.
+          See also <a href="NOTICE">NOTICE</a>. “QR Code” is a registered trademark of DENSO WAVE INCORPORATED.
+          Heebo is bundled in <code>fonts/</code> under the SIL Open Font License 1.1. See <a href="fonts/OFL.txt">fonts/OFL.txt</a>.
+        </p>
+
+        <h2>6. Disclaimer of warranty and liability</h2>
+        <p>
+          The code and output are provided “AS IS”, without warranty of any kind, express or implied.
+          In no event shall A.RICH Software be liable for any claim, damages, or other liability
+          arising from the use of this tool.
+        </p>
+      </article>
+
+      <article class="terms-card" data-lang-block="he" lang="he" hidden>
+        <h1>תנאי שימוש</h1>
+        <p>
+          התנאים האלה חלים על מחולל הקישורים וקודי ה-QR של A.RICH Software. אותם כללים מופיעים גם בקובץ
+          <a href="license.html">בדף הרישיון</a>. אתר החברה:
+          <a href="https://arich-software.co.il/" target="_blank" rel="noopener">https://arich-software.co.il/</a>.
+        </p>
+
+        <h2>1. התוצר — שימוש חופשי</h2>
+        <p>
+          קישורים וקודי QR, כולל קובצי SVG ו-PNG שהופקו בכלי, מותרים לשימוש חופשי, כולל שימוש
+          מסחרי ושימוש עצמי, בלי חובת קרדיט על התוצר עצמו.
+        </p>
+
+        <h2>2. הקוד — שימוש עצמי ומסחרי, עם קרדיט</h2>
+        <p>
+          מותר להשתמש בקוד, להעתיק אותו, לשנות אותו ולהפיץ אותו לשימוש עצמי ולשימוש מסחרי.
+          אם משתמשים בקוד, מעתיקים אותו, מפרסמים אותו או משלבים חלק מהותי ממנו — חובה לתת קרדיט גלוי
+          לחברת A.RICH Software עם קישור פעיל לאתר
+          <a href="https://arich-software.co.il/" target="_blank" rel="noopener">https://arich-software.co.il/</a>.
+          הקרדיט חייב להופיע במוצר, באתר או במאגר שמשתמש בקוד.
+        </p>
+
+        <h2>3. סימני המותג — אינם מורשים</h2>
+        <p>
+          אסור להשתמש בלוגו, באייקון או בתמונות המותג של החברה באתרים אחרים, במוצרים אחרים או בעותקים
+          של המאגר. מי שמעתיק את הקוד חייב להסיר את קבצי המותג ולהחליף אותם בזהות משלו.
+          שם החברה יכול להופיע רק בקרדיט הנדרש בסעיף 2.
+        </p>
+        <p>
+          אייקוני הרשתות בספרייה הם קווי Lucide, לא לוגואים רשמיים.
+          חמישה סימני מרכז (WhatsApp, Instagram, Facebook, LinkedIn, Waze) הם נתיבים מ-Simple Icons ברישיון CC0.
+          השמות נשארים סימנים מסחריים של בעליהם. הכלי אינו מעניק רישיון לסימנים האלה.
+          ללוגו צבעוני רשמי — העלו אותו ב«העלאה» ופעלו לפי הנחיות המותג.
+        </p>
+
+        <h2>4. פרטיות — בלי איסוף ובלי מעקב</h2>
+        <p>
+          הכלי אינו אוסף, אינו מוכר ואינו מעביר מידע אישי. אין אנליטיקס, אין פיקסלים לפרסום,
+          אין עוגיות ואין יומני שימוש. מספרי טלפון, כתובות מייל, כתובות אתר, תמונות שהועלו והקבצים
+          שנוצרים מעובדים בדפדפן של המשתמש בלבד ואינם נשלחים ל-A.RICH Software.
+          טלפון, אימייל, סיסמת Wi-Fi ולוגו שהועלה נשמרים זמנית ב-sessionStorage בלבד ונמחקים אוטומטית עם סגירת הלשונית.
+          ב-localStorage נשמרות רק שפת הממשק והעדפות העיצוב (צבעים וצורות, בלי תוכן הטופס).
+          גופן Heebo כלול באתר עצמו, וטעינתו אינה כוללת את הנתונים שהוזנו בטופס.
+        </p>
+
+        <h2>5. הודעות צד שלישי</h2>
+        <p>
+          הקובץ <code>vendor/qrcode-generator.js</code> הוא יצירתו של Kazuhiko Arase (2009) ומוגן ברישיון MIT.
+          נוסח הרישיון נמצא ב-<a href="vendor/LICENSE-MIT.txt">vendor/LICENSE-MIT.txt</a>.
+          אייקוני המרכז הם הקטלוג המלא של Lucide (ISC; חלק מהגליפים גם MIT Feather). נוסח הרישיון נמצא ב-
+          <a href="vendor/LICENSE-LUCIDE.txt">vendor/LICENSE-LUCIDE.txt</a>.
+          ראו גם <a href="NOTICE">NOTICE</a>. "QR Code" הוא סימן מסחרי רשום של DENSO WAVE INCORPORATED.
+          גופן Heebo כלול בתיקייה <code>fonts/</code> לפי SIL Open Font License 1.1. ראו <a href="fonts/OFL.txt">fonts/OFL.txt</a>.
+        </p>
+
+        <h2>6. כתב ויתור מאחריות</h2>
+        <p>
+          הקוד והתוצרים ניתנים כמות שהם ("AS IS"), ללא אחריות מכל סוג שהוא.
+          A.RICH Software לא תישא באחריות לכל נזק, ישיר או עקיף, שייגרם
+          כתוצאה מהשימוש בכלי או בתוצרים המופקים ממנו.
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span data-i18n="footer">A free tool from A.RICH Software</span>
+        <span class="footer-links">
+          <a href="about.html" data-i18n="whyFree">Why is this free?</a>
+          <a href="terms.html" data-i18n="terms">Terms of use</a>
+          <a href="license.html" data-i18n="license">License</a>
+          <a href="https://arich-software.co.il/" target="_blank" rel="noopener">arich-software.co.il</a>
+        </span>
+        <p class="footer-privacy" data-i18n="privacyNote">This tool does not collect, store, or track personal data.</p>
+      </div>
+    </footer>
+
+    <script src="js/i18n.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        setDocumentLang(detectInterfaceLang(), false);
+        document.querySelectorAll("[data-lang-set]").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            setDocumentLang(btn.getAttribute("data-lang-set"), true);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
